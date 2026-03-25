@@ -1,0 +1,28 @@
+.nav-button {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background-color: #2563eb;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.nav-button:hover {
+  background-color: #1d4ed8;
+  transform: scale(1.05);
+}
+
+.nav-button:active {
+  transform: scale(0.95);
+  background-color: #1e40af;
+}
+
+/* Active page highlight using NavLink's isActive */
+.nav-button.active {
+  background-color: #1e40af; /* dark blue for active page */
+}
+
+.nav-button,
+.nav-button.active {
+  transition: background-color 0.3s, transform 0.2s;
+}
